@@ -25,16 +25,18 @@ namespace Praticas2_A
             acc4.Loan(100.00);
 
 
-            // IS
+            // IS / AS
             if(acc3 is BussinesAccount)
             {
-                BussinesAccount acc5 = (BussinesAccount)acc3;
+                //BussinesAccount acc5 = (BussinesAccount)acc3; //IS
+                BussinesAccount acc5 = acc3 as BussinesAccount; //AS
                 acc5.Loan(200.00);
                 Console.WriteLine("Loan!!");
             }
             if(acc3 is SavingAccount)
             {
-                SavingAccount acc5 = (SavingAccount)acc3;
+                //SavingAccount acc5 = (SavingAccount)acc3; //IS
+                SavingAccount acc5 = acc3 as SavingAccount; //AS
                 acc5.UpdateBalance();
                 Console.WriteLine("Update!!");
             }
