@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
+
 namespace EmployeeExerc
 {
     class Program
@@ -34,6 +35,13 @@ namespace EmployeeExerc
                 {
                     list.Add(new Employee(name, hours, valuePerHour));
                 }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Payments: ");
+            foreach (Employee emp in list)
+            {
+                Console.WriteLine(emp.Name + " - $ " + emp.Payment().ToString("F2", CultureInfo.InvariantCulture));
             }
 
         }
