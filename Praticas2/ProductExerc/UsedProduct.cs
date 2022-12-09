@@ -13,7 +13,7 @@ namespace ProductExerc
         {
         }
 
-        public UsedProduct(DateTime manufactureDate)
+        public UsedProduct(string name, double price, DateTime manufactureDate) : base (name, price)
         {
             ManufactureDate = manufactureDate;
         }
