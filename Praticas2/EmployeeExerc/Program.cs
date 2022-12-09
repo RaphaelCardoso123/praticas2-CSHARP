@@ -11,6 +11,8 @@ namespace EmployeeExerc
         {
 
             List<Employee> list = new List<Employee>();
+
+            Console.WriteLine("Enter the number of employees: ");
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++)
@@ -27,7 +29,7 @@ namespace EmployeeExerc
 
                 if (ch == 'y')
                 {
-                    Console.Write("Additional carge: ");
+                    Console.Write("Additional charge: ");
                     double additionalCharge = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     list.Add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge));
                 }
@@ -44,6 +46,7 @@ namespace EmployeeExerc
                 Console.WriteLine(emp.Name + " - $ " + emp.Payment().ToString("F2", CultureInfo.InvariantCulture));
             }
 
+            Console.ReadLine();
         }
     }
 }
