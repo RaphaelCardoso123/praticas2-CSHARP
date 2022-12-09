@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace EmployeeExerc
 {
     class Employee
@@ -15,7 +12,14 @@ namespace EmployeeExerc
         {
         }
 
-        public double Payment()
+        public Employee(string name, int hours, double valuePerHour)
+        {
+            Name = name;
+            Hours = hours;
+            ValuePerHour = valuePerHour;
+        }
+
+        public virtual double Payment()
         {
             return Hours * ValuePerHour;
         }
