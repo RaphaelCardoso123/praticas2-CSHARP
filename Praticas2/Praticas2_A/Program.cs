@@ -6,6 +6,23 @@ namespace Praticas2_A
     {
         static void Main(string[] args)
         {
+
+            // HERANÇA / UPCASTING / DOWNCASTING / IS / AS / SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE / BASE
+
+
+            // SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE
+            Account acc1 = new Account(800, "Raphael", 4000.00);
+            Account acc2 = new SavingAccount(700, "Flávia", 3000.00, 0.01);
+
+            acc1.Withdraw(10.00);
+            acc2.Withdraw(10.00);
+            Console.WriteLine(acc1.Balance);
+            Console.WriteLine(acc2.Balance);
+
+
+
+            /*
+
             // HERANÇA / UPCASTING / DOWNCASTING / IS / AS
             //BussinesAccount account = new BussinesAccount(8000, "Raphael", 3500.00, 10000.00);
             //Console.WriteLine(account.Balance);
@@ -39,7 +56,7 @@ namespace Praticas2_A
                 Console.WriteLine("Update!!");
             }
 
-
+            */
 
 
             Console.ReadLine();

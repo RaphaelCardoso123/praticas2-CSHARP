@@ -23,5 +23,11 @@ namespace Praticas2_A.Entities
         {
             Balance += Balance * InterestRate;
         }
+
+        public override void Withdraw(double amount) // SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE
+        {
+            base.Withdraw(amount); // BASE puxa o que a conta "principal" Account tem e depois adiciona o que ela quer (Balance -= 2.00;)
+            Balance -= 2.00;
+        }
     }
 }
