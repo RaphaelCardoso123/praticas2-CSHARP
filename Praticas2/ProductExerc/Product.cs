@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 namespace ProductExerc
 {
@@ -22,7 +23,7 @@ namespace ProductExerc
 
         public virtual string PriceTag()
         {
-            return Name + " $" + Price;
+            return Name + " $" + Price.ToString("F2", CultureInfo.InvariantCulture); ;
         }
 
     }
