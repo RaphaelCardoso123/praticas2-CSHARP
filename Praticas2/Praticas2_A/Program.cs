@@ -1,5 +1,8 @@
 ﻿using System;
 using Praticas2_A.Entities;
+using System.Globalization;
+using System.Collections.Generic;
+
 namespace Praticas2_A
 {
     class Program
@@ -7,8 +10,31 @@ namespace Praticas2_A
         static void Main(string[] args)
         {
 
-            // HERANÇA / UPCASTING / DOWNCASTING / IS / AS / SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE / BASE
+        // HERANÇA / UPCASTING / DOWNCASTING / IS / AS / SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE / BASE / CLASSE ABSTRATA
 
+        List<Account> list = new List<Account>();
+
+        list.Add(new SavingAccount(1001, "Alex", 500.00, 0.01));
+        list.Add(new BussinesAccount(1002, "Maria", 500.00, 400.00));
+        list.Add(new SavingAccount(1003, "Bob", 500.00, 0.01));
+        list.Add(new BussinesAccount(1004, "Anna", 500.00, 500.00));
+
+        double sum = 0.0;
+        foreach (Account acc in list)
+        {
+            sum += acc.Balance;
+        }
+
+        Console.WriteLine("Total balance: " + sum.ToString("F2", CultureInfo.InvariantCulture));
+
+       
+
+
+
+
+            /*
+
+            // HERANÇA / UPCASTING / DOWNCASTING / IS / AS / SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE / BASE
 
             // SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE
             Account acc1 = new Account(800, "Raphael", 4000.00);
@@ -18,6 +44,10 @@ namespace Praticas2_A
             acc2.Withdraw(10.00);
             Console.WriteLine(acc1.Balance);
             Console.WriteLine(acc2.Balance);
+
+            */
+
+
 
 
 

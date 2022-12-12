@@ -1,7 +1,7 @@
 ﻿
 namespace Praticas2_A.Entities
 {
-    class Account
+    abstract class Account
     {
 
         public int Number { get; private set; }
