@@ -19,15 +19,25 @@ namespace Praticas2_A
         list.Add(new SavingAccount(1003, "Bob", 500.00, 0.01));
         list.Add(new BussinesAccount(1004, "Anna", 500.00, 500.00));
 
+
         double sum = 0.0;
         foreach (Account acc in list)
-        {
-            sum += acc.Balance;
-        }
-
+            {
+                sum += acc.Balance;
+            }
         Console.WriteLine("Total balance: " + sum.ToString("F2", CultureInfo.InvariantCulture));
 
-       
+
+        foreach (Account acc in list)
+            {
+                acc.Withdraw(10.00);
+            }
+        foreach (Account acc in list)
+            {
+                Console.WriteLine("Updated balance for account " + acc.Number + ") " 
+                + acc.Balance.ToString("F2", CultureInfo.InvariantCulture));
+            }
+
 
 
 
