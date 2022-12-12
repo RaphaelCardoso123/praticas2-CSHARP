@@ -9,7 +9,7 @@ namespace Praticas2_A
     {
         static void Main(string[] args)
         {
-
+            //Praticas
             // HERANÇA / UPCASTING / DOWNCASTING / IS / AS / SOBREPOSIÇÃO(SOBREESCRITA) VIRTUAL - OVERRIDE / BASE / CLASSE ABSTRATA(a escrita é em itálico na descrição)
 
             List<Account> list = new List<Account>();
