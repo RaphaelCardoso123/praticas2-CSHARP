@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Globalization;
 
 namespace ProductExerc
 {
@@ -20,7 +20,7 @@ namespace ProductExerc
 
         public override string PriceTag()
         {
-            return base.PriceTag();
+            return Name + " (used) $" + Price.ToString("F2", CultureInfo.InvariantCulture) + " (Manufacture date: " + ManufactureDate.ToString("dd/mm/yyyy") + ")";
         }
 
     }

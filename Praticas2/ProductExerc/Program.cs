@@ -24,7 +24,7 @@ namespace ProductExerc
                 Console.Write("Price: ");
                 double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                
-                if (type == 'C')
+                if (type == 'c')
                 {
                     list.Add(new Product(name, price));
                 }
