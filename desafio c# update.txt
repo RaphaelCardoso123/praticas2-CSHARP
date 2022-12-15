@@ -1,0 +1,169 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ex3.ContaCorrente
+{
+    public class ContaCorrente
+    {   
+        public string NomeCorrentista { get; set; }
+        protected int numero_conta { get; set; }
+        protected int numero_agencia { get; set; }
+        private double _saldo { get; set; }
+
+        public ContaCorrente(string _NomeCorrentista, int _NumeroConta, int _NumeroAgencia, double _Saldo){
+            NomeCorrentista = _NomeCorrentista;
+            numero_conta = _NumeroConta;
+            numero_agencia = _NumeroAgencia;
+            _saldo = _Saldo;
+        }
+    }
+}
+#
+using ex3.ContaCorrente;
+class exercico3{
+    public static void Main(){
+        ContaCorrente conta = new ContaCorrente("Marcos", 124242, 4642-2, 34533.35);
+    }
+}
+########################
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Encapsulamento
+{
+    public class ContaCorrente
+    {
+        private string NomeCorrentista;
+        private int NumeroConta;
+        private int NumeroAgencia;
+        private double Saldo;
+    }
+}
+#
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Encapsulamento
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
+########################
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio3_Encapsulamento
+{
+	class ContaCorrente
+	{
+		public string NomeCorrentista;
+		private int _numeroConta;
+		private int _numeroAgencia;
+		private decimal _saldo;
+	}
+}
+#
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio3_Encapsulamento
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+		}
+	}
+}
+########################
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Ex_3.Models
+{
+    public class ContaCorrente
+    {
+        public string? nomeCorrentista { get; set; }
+        public int numeroConta { get; set; }
+        public int numeroAgencia { get; set; }
+        private decimal saldo { get; set; }
+
+        public ContaCorrente(decimal saldoInicial){
+            saldo = saldoInicial;
+        }
+        public void InserirSaldo(decimal valor){
+            saldo = saldo + valor;
+        }
+
+        public void ExibirSaldo(){
+            Console.WriteLine("Seu saldo é: R$" + saldo);
+        }
+    }
+}
+#
+
+using Ex_3.Models;
+
+ContaCorrente cc = new ContaCorrente(0);
+
+cc.nomeCorrentista = "Roberto";
+cc.numeroAgencia = 086;
+cc.numeroConta = 5555;
+cc.InserirSaldo(50);
+cc.ExibirSaldo();
+########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
