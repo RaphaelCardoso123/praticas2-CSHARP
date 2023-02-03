@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 
 
-namespace EmployeeExerc
+namespace Praticas2_C
 {
     class Program
     {

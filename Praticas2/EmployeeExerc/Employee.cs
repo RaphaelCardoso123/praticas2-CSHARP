@@ -1,5 +1,5 @@
 ﻿
-namespace EmployeeExerc
+namespace Praticas2_C
 {
     class Employee
     {
