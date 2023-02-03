@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praticas2_A", "Praticas2_A\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExerc", "EmployeeExerc\EmployeeExerc.csproj", "{B149D41A-B298-4DD7-9B64-E882B9F187F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductExerc", "ProductExerc\ProductExerc.csproj", "{70999617-9B09-4532-BC97-03342C1099FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praticas2_B", "ProductExerc\Praticas2_B.csproj", "{70999617-9B09-4532-BC97-03342C1099FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

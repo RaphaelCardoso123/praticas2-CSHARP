@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace ProductExerc
+namespace Praticas2_B
 {
     class UsedProduct : Product
     {

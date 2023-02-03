@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Globalization;
 
-namespace ProductExerc
+namespace Praticas2_B
 {
     class ImportedProduct : Product
     {
