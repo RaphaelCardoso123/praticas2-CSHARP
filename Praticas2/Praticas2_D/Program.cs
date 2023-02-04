@@ -1,0 +1,41 @@
+﻿using System;
+using System.Globalization;
+using Praticas2_D.Services;
+
+
+namespace Praticas2_D
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime start;
+            DateTime finish;
+
+            Console.WriteLine("Enter rental date");
+
+            Console.Write("Car model: ");
+            string model = Console.ReadLine();
+
+            Console.Write("Pickup (dd/MM/yyyy hh:mm): ");
+             start = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy hh:mm", CultureInfo.InvariantCulture);
+
+            Console.Write("Return (dd/MM/yyyy hh:mm): ");
+            finish = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy hh:mm", CultureInfo.InvariantCulture);
+
+            Console.Write("Enter price per hour: ");
+            double hour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Enter price per day: ");
+            double day = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            CarRental carRental = new CarRental(start, finish, new Vehicle(model));
+
+            RentalService rentalService = new RentalService(hour, day);
+
+            rentalService.ProcessInvoice(carRental);
+
+            Console.WriteLine("Invoice:");
+            Console.WriteLine(carRental.Invoice);
+        }
+    }
+}
