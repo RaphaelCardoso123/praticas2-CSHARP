@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Praticas2_E.Enums;
 
 namespace Praticas2_E.Entities
 {
-    class Shape
+    abstract class Shape
     {
+        public Color Color { get; set; }
+
+        public abstract double Area();
     }
 }
