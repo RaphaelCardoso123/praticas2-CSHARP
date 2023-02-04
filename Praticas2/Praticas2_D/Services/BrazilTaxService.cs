@@ -1,7 +1,7 @@
 ﻿
 namespace Praticas2_D.Services
 {
-    class BrazilTaxService
+    class BrazilTaxService : ITaxService
     {
 
         public double Tax (double amount)
