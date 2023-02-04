@@ -1,8 +1,8 @@
 ﻿using Praticas2_E.Enums;
 
-namespace Praticas2_E.Entities
+namespace Praticas2_E.Model.Entities
 {
-    abstract class Shape
+    abstract class AbstractShape : IShape
     {
         public Color Color { get; set; }
 

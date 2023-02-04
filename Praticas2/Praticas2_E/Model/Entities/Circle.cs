@@ -1,11 +1,10 @@
-﻿using Praticas2_E.Enums;
-using Praticas2_E.Entities;
+﻿
 using System;
 using System.Globalization;
 
 namespace Praticas2_E.Model.Entities
 {
-    class Circle : Shape 
+    class Circle : AbstractShape 
     {
         public double Radius { get; set; }
 

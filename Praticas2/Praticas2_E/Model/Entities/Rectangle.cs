@@ -1,11 +1,10 @@
-﻿using Praticas2_E.Enums;
-using Praticas2_E.Entities;
-using System;
+﻿
 using System.Globalization;
+using Praticas2_E.Model.Entities;
 
 namespace Praticas2_E.Entities
 {
-    class Rectangle : Shape
+    class Rectangle : AbstractShape
     {
         public double Width { get; set; }
         public double Height { get; set; }
