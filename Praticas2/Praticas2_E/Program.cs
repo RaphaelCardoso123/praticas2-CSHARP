@@ -1,4 +1,5 @@
 ﻿using System;
+using Praticas2_E.Entities;
 
 namespace Praticas2_E
 {
@@ -6,7 +7,9 @@ namespace Praticas2_E
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
+            Console.ReadLine();
         }
     }
 }
