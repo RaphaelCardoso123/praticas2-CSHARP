@@ -1,5 +1,4 @@
-﻿
-using System.Globalization;
+﻿using System.Globalization;
 using Praticas2_E.Model.Entities;
 
 namespace Praticas2_E.Entities
