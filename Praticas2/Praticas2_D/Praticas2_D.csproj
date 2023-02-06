@@ -42,6 +42,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BrazilTaxService.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Services\ITaxService.cs" />
+>>>>>>> 4e65a0c92a9e7b2655ae58ccaf89dae5bee28522
     <Compile Include="Services\RentalService.cs" />
     <Compile Include="Entities\Vehicle.cs" />
   </ItemGroup>

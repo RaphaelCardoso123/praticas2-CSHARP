@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praticas2_B", "ProductExerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praticas2_D", "Praticas2_D\Praticas2_D.csproj", "{CA8BBA38-9CC3-4B93-B41C-24E62574EAF1}"
 EndProject
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praticas2_E", "Praticas2_E\Praticas2_E.csproj", "{B99DA569-38EE-4DA3-9412-76A0EF1D6E7D}"
+EndProject
+>>>>>>> 4e65a0c92a9e7b2655ae58ccaf89dae5bee28522
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +44,13 @@ Global
 		{CA8BBA38-9CC3-4B93-B41C-24E62574EAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8BBA38-9CC3-4B93-B41C-24E62574EAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8BBA38-9CC3-4B93-B41C-24E62574EAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{B99DA569-38EE-4DA3-9412-76A0EF1D6E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99DA569-38EE-4DA3-9412-76A0EF1D6E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99DA569-38EE-4DA3-9412-76A0EF1D6E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99DA569-38EE-4DA3-9412-76A0EF1D6E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 4e65a0c92a9e7b2655ae58ccaf89dae5bee28522
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
